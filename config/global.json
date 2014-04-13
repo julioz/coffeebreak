@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "Coffee Break": {
+            "applicationId": "g7htZT4gYmfJ8EYQFFu1VqTPqldBf0XlWo5rGg2V", 
+            "masterKey": "675Gs3GxhFqva2S4mxoffNsUO7VqxrJN9oDJcCdu"
+        }, 
+        "_default": {
+            "link": "Coffee Break"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.18"
+    }
+}
