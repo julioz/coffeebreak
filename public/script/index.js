@@ -99,7 +99,7 @@ $(document).ready(function() {
             }
         });
     };
-    
+
     var listSmartUsers = function(json) {
         var users = json.users;
         
@@ -113,8 +113,27 @@ $(document).ready(function() {
                 resultList.append(listItem);
                 
                 for (var index = 0; index < users[item].length; index++) {
+                    var user = users[item][index];
+
                     var userRow = $("<li />").addClass("userRow");
-                    userRow.html(users[item][index].first_name);
+                    var divWrapper = $("<div>");
+                    var img = $("<img />");
+                    var divData = $("<div>");
+                    var h2 = $("<h2>");
+                    var p = $("<p>");
+
+                    p.html(user.email);
+                    h2.html(user.first_name + " " + user.last_name);
+                    img.attr("src","http://graph.facebook.com/" + user.id + "/picture")
+
+                    divData.append(h2)
+                           .append(p);
+
+                    divWrapper.append(img)
+                              .append(divData);
+
+
+                    userRow.append(divWrapper);
                     resultList.append(userRow);
                 }
             }

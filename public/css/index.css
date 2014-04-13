@@ -1,5 +1,20 @@
+h2, p{
+	margin: 0;
+	padding: 0;
+}
+
 .paginaTres ul {
     list-style : none;
+}
+
+.paginaTres ul img{
+	display: inline-block;
+}
+
+.paginaTres ul div div{
+	display: inline-block;	
+	vertical-align: top;
+	margin-left: 10px;
 }
 
 .subjectTitle {
@@ -8,4 +23,5 @@
 
 .userRow {
     color : green;
+    margin-bottom:15px;
 }
